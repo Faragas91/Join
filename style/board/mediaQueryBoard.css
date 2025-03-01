@@ -1,0 +1,338 @@
+/* Anpassungen für Bildschirme bis 1400px */
+
+@media screen and (max-width: 1400px) {
+  .boardMain {
+    padding: 32px;
+    padding-right: 0px;
+  }
+
+  .boardSectionsContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mainContentWrapper {
+    gap: 0px;
+    overflow: scroll;
+    padding-right: 32px;
+  }
+
+  .boardSectionsContainer {
+    flex-direction: column;
+    padding-bottom: 32px;
+    overflow: visible;
+  }
+
+  .editTaskInput {
+    margin-right: 0px;
+    padding: 12px 22px;
+    font-size: 18px;
+    max-width: 1980px;
+  }
+
+  .editTaskInput,
+  .editDropDown {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .boardContainer {
+    margin-bottom: 32px;
+  }
+
+  .boardInputContainer {
+    width: 100%;
+    margin: 32px 0px;
+  }
+
+  .boardSection {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .tasksInnerContainer {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .boardButton {
+    width: 100%;
+  }
+
+  .categoryText {
+    font-size: 26px;
+  }
+
+  .boardSection .sectionPlus {
+    width: 30px;
+    height: 30px;
+  }
+
+  .boardAddTask {
+    width: 40px;
+    height: 40px;
+  }
+
+  .boardSectionsContainer {
+    gap: 26px;
+  }
+
+  #boardAddTask {
+    display: none !important;
+  }
+
+  .editDropdownCategory {
+    max-width: 1400px;
+  }
+
+  .editSelectContainerOverlay {
+    font-size: 18px;
+  }
+
+  .editSubtaskWrapper {
+    width: 100%;
+  }
+  .editIconWrapperOverlay {
+    right: 15px;
+    bottom: 7px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .boardMain {
+    padding-bottom: 80px;
+  }
+
+  .boardOverlayAssignedTo ul::-webkit-scrollbar {
+    width: 8px !important;
+  }
+
+  .checkboxList::-webkit-scrollbar {
+    width: 8px !important;
+  }
+
+  .editDescriptionInputOverlay {
+    font-size: 18px;
+  }
+
+  .editPriorityButtonOverlay button:hover {
+    background-color: #fff;
+  }
+
+  .editPriorityButtonOverlay button.urgent {
+    background-color: #ff3d00;
+  }
+
+  .editPriorityButtonOverlay button.medium {
+    background-color: #ffa800;
+  }
+
+  .editPriorityButtonOverlay button.low {
+    background-color: #7ae229;
+  }
+
+  /* Disable Hover Effects */
+
+  .boardAddTask:hover,
+  .boardAddTask:hover * {
+    background-color: rgba(42, 54, 70);
+    transition: inherit;
+  }
+
+  .boardSection .sectionPlus:hover {
+    background-image: url("/assets/icon/board/plus_button-section-black.svg");
+  }
+
+  .boardInputContainer button:hover {
+    background-image: url("/assets/icon/board/search_Button.svg");
+  }
+
+  .closeBoardOverlay:hover {
+    background-color: transparent !important;
+  }
+
+  .boardOverlayActionButtonsDelete:hover,
+  .boardOverlayActionButtonsEdit:hover {
+    color: rgba(42, 54, 70) !important;
+    background-color: transparent;
+  }
+
+  .editIconWrapperOverlay {
+    right: 15px;
+    bottom: 6px;
+  }
+
+  .editSubtask:hover,
+  .removeSubtask:hover,
+  .confirmEditSubtask:hover,
+  .editSubtask img:hover,
+  #confirmSubtask:hover,
+  #discardSubtask:hover {
+    background-color: transparent;
+  }
+
+  .editTaskFormOverlay {
+    padding: 0 !important;
+  }
+}
+
+/* Anpassungen für Bildschirme bis 950px */
+@media screen and (max-width: 950px) {
+  .btnDark {
+    padding: 3px !important;
+  }
+
+  .boardTemplate {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    min-height: 300px !important;
+  }
+}
+
+@media (max-height: 795px) {
+  .tasksInnerContainer {
+    max-height: 400px;
+  }
+  .editSelectContainerOverlay {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 545px) { 
+  .boardOverlayContainer {
+    padding: 24px 20px !important;
+  }
+
+  .editButtonWidth {
+    width: 120px !important;
+    height: 40px !important;
+  }
+
+  .editPriorityButtonOverlay button {
+    gap: 5px !important;
+  }
+}
+
+/* Anpassungen für Bildschirme bis 500px */
+@media screen and (max-width: 500px) {
+  main {
+    padding: 32px 16px 16px 16px;
+  }
+
+  .boardOverlayTaskTitle {
+    font-size: 38px !important;
+  }
+
+  .editTaskInputContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .editPriorityButtonOverlay {
+    gap: 5px !important;
+  }
+  .editTaskInput {
+    padding: 10px 14px;
+    font-size: 16px;
+  }
+
+  .editDescriptionInputOverlay {
+    width: 92%;
+    font-size: 14px;
+  }
+
+  .editSelectedContacts {
+    flex-wrap: wrap;
+    padding: 8px;
+    margin-bottom: 20px;
+    max-width: 410px;
+  }
+  .okayBtn {
+    font-size: 18px;
+  }
+}
+
+/* Anpassungen für Bildschirme bis 450px */
+@media screen and (max-width: 450px) {
+  .editPriorityButtonOverlay button {
+    font-size: 14px !important;
+    padding: 10px !important;
+  }
+}
+
+/* Anpassungen für Bildschirme bis 400px */
+@media screen and (max-width: 400px) {
+  .boardOverlayTaskTitle {
+    font-size: 32px !important;
+  }
+
+  .editButtonWidth {
+    width: 100px !important;
+    height: 40px !important;
+  }
+}
+
+/* Zusätzliche Anpassungen für sehr kleine Bildschirme (bis 395px) */
+@media screen and (max-width: 395px) {
+  .editTaskInputOverlay {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+  .editTaskInputContainer {
+    margin-right: 0;
+  }
+
+  .editBoardHeader {
+    padding-right: 10px !important;
+  }
+
+  .boardOverlayAssignedTo ul {
+    padding: 0 !important;
+  }
+
+  .boardOverlayAssignedTo ul::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  .checkboxList::-webkit-scrollbar {
+    display: none;
+  }
+
+  .editSelectContainerOverlay {
+    font-size: 14px;
+  }
+
+  .editIconWrapperOverlay {
+    right: 10px;
+    bottom: 4px;
+  }
+  .okayBtn {
+    width: 150px;
+  }
+
+
+
+  .editButtonWidth {
+    width: 80px !important;
+    height: 40px !important;
+  }
+}
+
+@media (max-height: 930px) {
+  .boardOverlayContainer {
+    max-height: 800px !important;
+  }
+
+  .editTaskWrapper {
+    max-height: 450px !important;
+  }
+}
+
+@media (max-height: 792px) {
+  .boardOverlayAssignedTo ul {
+    max-height: 100px !important;
+  }
+
+  .editTaskInputContainer {
+    max-height: 45vh !important;
+  }
+}

@@ -1,0 +1,554 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  border: unset;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b4a5e;
+  border-radius: 4px;
+}
+
+/* Body Styling */
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Placeholder Styling */
+::placeholder {
+  color: rgba(209, 209, 209);
+}
+
+/* Utility Classes */
+.dNone {
+  display: none !important;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mgBottom-20px {
+  margin-bottom: 20px;
+}
+
+/* Link Styling */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Button Styling */
+.btnUnabledDark,
+.btnDark,
+.btnLight {
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.btnUnabledDark {
+  background-color: rgba(239, 239, 239);
+  border: 1px solid rgba(239, 239, 239);
+  color: rgba(42, 54, 70);
+}
+
+.btnDark {
+  background-color: rgba(42, 54, 70);
+  border: 1px solid rgba(42, 54, 70);
+  color: white;
+}
+
+.btnDark:hover {
+  cursor: pointer;
+  background-color: rgba(42, 170, 226);
+  border: 1px solid rgba(42, 170, 226);
+  box-shadow: 0px 3px 5px 0px rgba(180, 180, 180);
+  transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+.btnLight {
+  background-color: white;
+  border: 1px solid rgba(42, 54, 70);
+  color: rgba(42, 54, 70);
+}
+
+.btnLight:hover {
+  cursor: pointer;
+  border: 1px solid rgba(42, 170, 226);
+  color: rgba(42, 170, 226);
+  box-shadow: 0px 3px 5px 0px rgba(180, 180, 180);
+  transition: border 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+/* Global Header Styling */
+header {
+  min-height: 96px;
+  max-height: 96px;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 64px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+header h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.topBarIcons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.topBarIcons div {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* User Icon Styling */
+.userIcon {
+  background-color: #ffffff;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userIcon > a {
+  background-color: transparent;
+  color: #29abe2;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.userIcon:hover {
+  background-color: #f6f7f8;
+}
+
+.userOptionsFrame {
+  display: none;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(42, 54, 71, 1);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  right: 40px;
+  top: 96px;
+}
+
+.userOptionsFrame.active {
+  display: flex;
+}
+
+.userOptionsContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.userOptionsContent a {
+  font-size: 16px;
+  color: rgba(205, 205, 205, 1);
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.userOptionsContent a:hover {
+  background-color: #2a3d59;
+  text-decoration: none;
+  margin-right: 8px;
+  margin-left: 8px;
+  border-radius: 10px;
+}
+
+.helpLink {
+  display: none;
+}
+
+.questionIcon {
+  background-color: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+
+.questionIcon:hover {
+  transform: scale(1.2);
+}
+
+.joinLogoMedium {
+  display: none;
+}
+
+/* Global Sidebar Styling */
+.sidebar__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 0;
+  background-color: rgb(42, 54, 71);
+  min-width: 232px;
+}
+
+.joinLogoBig,
+.sidebar__join-image {
+  cursor: default;
+  background-color: rgb(42, 54, 71);
+  text-decoration: none;
+}
+
+.nav__container,
+.logInLinkContainer {
+  display: flex;
+  width: 100%;
+  background-color: rgb(42, 54, 71);
+}
+
+.nav__container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav__container a,
+.logInLinkContainer a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px 50px;
+  color: #d9d9d9;
+  background-color: rgb(42, 54, 71);
+}
+
+.nav__container p,
+.logInLinkContainer p {
+  color: #d9d9d9;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  color: #d9d9d9;
+}
+
+.sidebar__footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  background-color: rgb(42, 54, 71);
+}
+
+.sidebar__footer > a {
+  padding: 6px 0;
+  overflow: hidden;
+}
+
+.sidebar__footer a > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #cdcdcd;
+}
+
+.sidebar__footer a:hover {
+  background-color: rgb(42, 54, 71);
+  text-decoration: none;
+}
+
+.zoom {
+  transition: transform 0.05s ease-in-out;
+}
+
+.zoom:hover {
+  color: #29abe2;
+  transform: scale(1.05);
+}
+
+.privacy-policy,
+.legal-notice {
+  overflow: hidden;
+}
+
+.sidebar__footer.active a > p {
+  background-color: red;
+}
+
+/* Navigation Link Active and Hover States */
+.nav-link.active {
+  background-color: #091931 !important;
+  color: white;
+  pointer-events: none;
+}
+
+.nav-link.active:hover {
+  cursor: default;
+}
+
+.nav-link.active img {
+  background-color: #091931;
+}
+
+.nav-link:hover {
+  background-color: #2a3d59;
+  text-decoration: none;
+}
+
+.nav-link:hover img {
+  background-color: #2a3d59;
+}
+
+.sidebar__join-image {
+  cursor: default;
+  background-color: rgb(42, 54, 71);
+}
+
+/* Responsive Styles for Screen Sizes */
+
+@media (max-width: 1400px) {
+  .sidebar__container {
+    padding: 32px 0;
+    min-width: 180px;
+  }
+
+  .nav__container a,
+  .logInLinkContainer a {
+    padding: 4px 32px;
+  }
+
+  header {
+    min-height: 80px;
+    max-height: 80px;
+    padding: 0px 32px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .layoutContainer {
+    flex-direction: column-reverse;
+  }
+
+  .joinLogoBig {
+    display: none;
+  }
+
+  .helpLink {
+    display: block;
+  }
+
+  .userOptionsFrame {
+    width: 150px;
+    height: 200px;
+    top: 80px;
+  }
+
+  .sidebar__footer {
+    display: none;
+  }
+
+  .nav__container,
+  .logInLinkContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 32px;
+    min-height: 80px;
+    max-height: 80px;
+    height: 100%;
+  }
+
+  .userIcon > a {
+    font-size: 16px;
+  }
+
+  .nav__container > a,
+  .logInLinkContainer > a {
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    padding: 0;
+  }
+
+  .icon {
+    width: 21px;
+    height: 24px;
+    margin-right: 0;
+  }
+
+  a.nav-link {
+    width: 80px;
+    height: 76px;
+    text-align: center;
+    border-radius: 16px;
+  }
+
+  .nav-link:hover {
+    border-radius: 18px;
+    background-color: #2a3647;
+  }
+
+  .nav-link:hover img {
+    background-color: #2a3647;
+  }
+
+  .sidebar__container {
+    height: 80px;
+    max-height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0;
+  }
+
+  header {
+    min-height: 80px;
+    max-height: 80px;
+    padding: 0 32px;
+    justify-content: space-between;
+  }
+
+  header h3 {
+    display: none;
+  }
+
+  .questionIcon {
+    display: none;
+  }
+
+  .joinLogoMedium {
+    display: block !important;
+  }
+
+  .userIcon {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff !important;
+  }
+
+  .nav__container p {
+    font-size: 14px !important;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 8px;
+  }
+
+  /* Disable Hover Effects */
+
+  .btnDark:hover {
+    background-color: rgba(42, 54, 70) !important;
+    border: 1px solid rgba(42, 54, 70) !important;
+    box-shadow: 0px 0px 0px 0px white !important;
+  }
+
+  .btnLight:hover {
+    color: rgba(42, 54, 70);
+    background-color: white !important;
+    border: 1px solid rgba(42, 54, 70) !important;
+    box-shadow: 0px 0px 0px 0px white !important;
+  }
+
+  .costombox:hover {
+    background-color: inherit !important;
+  }
+
+  .zoom:hover {
+    color: #cdcdcd;
+    transform: scale(1);
+  }
+  .userOptionsContent a:hover {
+    background-color: rgba(42, 54, 71, 1);
+  }
+}
+
+@media (max-width: 600px) {
+  .nav__container p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+  }
+
+  header {
+    padding: 0px 12px;
+  }
+
+  .contact {
+    gap: 24px !important;
+  }
+
+  .nav__container {
+    padding: 0px 12px;
+  }
+
+  .contactPictureSmall {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  /*Scrollbar*/
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 6px;
+  }
+}
+
+@media (max-width: 400px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 4px;
+  }
+}

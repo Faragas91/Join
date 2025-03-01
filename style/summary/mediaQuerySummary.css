@@ -1,0 +1,181 @@
+@media screen and (max-width: 1400px) {
+  main {
+    padding: 32px;
+  }
+
+  .summaryMainContent {
+    padding: 0px 32px;
+    gap: 32px;
+  }
+
+  .rightSideWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Disable Hover Effects */
+
+  .summaryTable:hover {
+    background-color: #fff !important;
+    color: inherit !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .summaryTable:hover * {
+    background-color: white;
+    color: black !important;
+  }
+
+  .summaryTable:hover .summaryToDo img {
+    background-color: #2a3647 !important;
+    content: url("/assets/icon/summary/edit_white.svg") !important;
+    transition: none !important;
+  }
+
+  .summaryTable:hover .summaryDone img {
+    background-color: #2a3647 !important;
+    content: url("/assets/icon/summary/done_white.svg") !important;
+    transition: none !important;
+  }
+
+  .summaryRightContainer>h2 {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    padding: 28px;
+  }
+
+  .summaryMainContent {
+    padding: 0px 32px 0px 32px;
+  }
+
+  .summaryUrgent {
+    gap: 10px;
+  }
+
+  .summaryHeadline h2 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .summaryHeadline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .summaryHeadline p {
+    order: 2;
+  }
+
+  .separatorBlue {
+    order: 3;
+    width: 100px;
+    height: 2px;
+  }
+
+  .rightSideWrapper {
+    padding-bottom: 80px;
+  }
+
+  .summaryToDo img,
+  .summaryDone img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .count span {
+    font-size: 56px;
+  }
+
+  .count p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    padding: 16px 16px 16px 16px;
+  }
+
+  .summaryMainContent {
+    padding: 0px 16px 0px 16px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .summaryMainContent {
+    margin-top: 0px;
+  }
+
+  .summaryToDo,
+  .summaryDone {
+    gap: 16px;
+  }
+
+  .summaryDeadline {
+    gap: 6px;
+  }
+
+  .separatorGrey {
+    margin: 12px; 
+    background-color: rgb(224, 221, 221) !important;
+  }
+
+  .summaryDeadline p,
+  .summaryDeadline span {
+    padding: 6px;
+  }
+}
+
+/* Height */
+
+@media screen and (max-height: 900px) {
+  .summaryTable {
+    height: 125px;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .summaryMainContent {
+    height: 50%;
+  }
+
+  .summaryTable {
+    height: 100px;
+  }
+
+  .summaryToDo,
+  .summaryDone,
+  .summaryUrgent,
+  .summeryBottomContent .summaryTable .count {
+    transform: scale(0.7);
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .summaryDeadline p,
+  .summaryDeadline span {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .summaryTable {
+    height: 85px;
+  }
+}
+
+@media (max-height: 600px) {
+  main {
+    padding: 24px;
+  }
+}

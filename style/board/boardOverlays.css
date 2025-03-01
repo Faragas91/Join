@@ -1,0 +1,264 @@
+/* Overlay Grundstruktur */
+.addBoardOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.hideOverlay {
+  display: none;
+  animation: slideIn 0.3s ease-in-out backwards;
+}
+
+@keyframes hideOverlay {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -300px;
+  }
+}
+
+/* Overlay Container */
+.boardOverlayContainer {
+  position: relative;
+  width: 100%;
+  max-width: 525px;
+  max-height: 930px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px 48px 40px;
+  overflow-y: hidden;
+  animation: slideIn 0.3s ease-in-out forwards;
+}
+
+@keyframes boardOverlayContainer {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+.boardOverlayContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-height: 755px;
+}
+
+/* Header */
+.boardOverlayHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 445px;
+  height: 100%;
+  max-height: 36px;
+}
+
+.closeBoardOverlay {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #2a3647;
+}
+
+.closeBoardOverlay:hover {
+  background-color: #eeeeee;
+}
+
+/* Task Informationen */
+.boardOverlayTaskCategory {
+  display: flex;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #0038ff;
+  padding: 4px 24px;
+  border-radius: 10px;
+  height: 100%;
+  max-height: 36px;
+}
+
+.boardOverlayTaskTitle {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.boardOverlayTaskDescription {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.boardOverlayAssignedTo {
+  max-width: 445px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.boardOverlayTaskInfo {
+  display: grid;
+  gap: 18px;
+}
+
+.boardOverlayTaskDate,
+.boardOverlayTaskPriority {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.boardOverlayTaskPriority img {
+  object-fit: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.label {
+  min-width: 80px;
+  text-align: left;
+  color: #42526e;
+}
+
+.boardOverlayAssignedTo ul {
+  list-style: none;
+  overflow-y: auto;
+  max-height: 150px;
+}
+
+.boardOverlayAssignedTo p {
+  color: #42526e;
+}
+
+.boardOverlayAssignedTo li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 7px 16px;
+}
+
+.boardOverlayUser {
+  border-radius: 50%;
+  color: white;
+  font-weight: 550;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boardOverlayUsername {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+/* Subtasks */
+.boardOverlaySubtasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.boardOverlaySubtasks p {
+  color: #42526e;
+}
+
+.checkboxList {
+  list-style: none;
+  padding: 0;
+  overflow-y: auto;
+  max-height: 48px;
+}
+
+.checkboxList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Checkbox Styling */
+.checkboxList label {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../../assets/icon/login/unchecked.svg");
+  background-size: cover;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.checkboxList label:hover {
+  background-image: url("../../assets/icon/login/hover_unchecked.svg");
+}
+
+.checkboxList input[type="checkbox"] {
+  display: none;
+}
+
+.checkboxList input[type="checkbox"]:checked + label {
+  background-image: url("../../assets/icon/login/checked.svg");
+}
+
+.checkboxList input[type="checkbox"]:checked + label:hover {
+  background-image: url("../../assets/icon/login/hover_checked.svg");
+}
+
+/* Action Buttons */
+.boardOverlayActionButtons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.boardOverlayActionButtonsDelete,
+.boardOverlayActionButtonsEdit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.boardOverlayActionButtonsDelete svg,
+.boardOverlayActionButtonsEdit svg {
+  width: 20px;
+  height: 20px;
+}
+
+.boardOverlayActionButtonsDelete:hover,
+.boardOverlayActionButtonsEdit:hover {
+  color: #29abe2;
+}
+
+.boardOverlayActionButtonsDelete:hover svg path,
+.boardOverlayActionButtonsEdit:hover svg path {
+  fill: currentColor;
+}
+
+.overlaySeparator {
+  color: #888;
+}

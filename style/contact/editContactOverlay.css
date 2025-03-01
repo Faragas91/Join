@@ -1,0 +1,648 @@
+/* Edit Contact Section */
+.editContactOverlay {
+  width: 1200px;
+  height: 600px;
+  background-color: #ffffff;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.editContactLeftSide {
+  width: 100%;
+  height: 100%;
+  background-color: #2a3647;
+  border-radius: 32px 0px 0px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSideContentWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #2a3647;
+  gap: 24px;
+  padding: 0px 32px;
+}
+
+.editContactRightSide {
+  /* width: 800px; */
+  height: 100%;
+}
+
+.logoContainer {
+  width: 100%;
+  background-color: #2a3647;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.joinLogoSmall {
+  background-color: #2a3647;
+}
+
+/* Text Styling */
+h1 {
+  color: #ffffff;
+  background-color: #2a3647;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+p {
+  color: #ffffff;
+  background-color: #2a3647;
+  font-size: 28px;
+}
+
+/* Header Section */
+.editContactHeadline {
+  width: 100%;
+  background-color: #2a3647;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.blueUnderline {
+  width: 26%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #29abe2;
+}
+
+/* Right Side Content */
+.rightSideContentWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0px 32px 32px 0px;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Form Input */
+.formInput {
+  border: 1px solid gray;
+  width: 422px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 0px 8px;
+  font-size: 18px;
+}
+
+.formInput:focus {
+  outline-color: #29abe2;
+}
+
+/* Contact Form */
+.contactForm {
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 64px;
+  gap: 64px;
+}
+
+/* Close Button */
+.closeButton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ffffff;
+}
+
+.closeButton:hover > a {
+  text-decoration: none;
+}
+
+.closeButton a:hover svg {
+  background-color: #eeeeee;
+  border-radius: 50%;
+  transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+.closeButton > svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Contact Picture */
+.contactPicture {
+  background-color: #ffffff;
+  margin: 0px 0px 0px 64px;
+}
+
+.contactPicture > img {
+  background-color: #ffffff;
+  width: 120px;
+  height: 120px;
+}
+
+/* Form Section */
+.formSection {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Form Buttons */
+.formButtons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  background-color: #ffffff;
+}
+
+.formButtons > button {
+  padding: 18px;
+  border: 1px solid #2a3647;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+/* Button Styling */
+.deleteButton {
+  color: #2a3647;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+.saveButton {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #2a3647;
+}
+
+.deleteButton,
+.saveButton,
+.cancelButton,
+.createContactButton {
+  cursor: pointer;
+}
+
+.saveContactButton:hover {
+  border: 1px solid #70c5ea;
+  transition: background-color 0.25s ease;
+  background-color: #70c5ea;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.saveContactButton:hover * {
+  background-color: transparent;
+}
+
+.saveContactButton {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #2a3647;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.saveContactButton > p {
+  font-size: 20px;
+}
+
+.deleteButton {
+  color: #2a3647;
+  font-weight: bold;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.deleteButton > p {
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.deleteButton:hover {
+  border: 1px solid #29abe2;
+  fill: #29abe2 !important;
+  border-color: #29abe2;
+  color: #29abe2;
+  transition: outline-color 0.25s ease;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.deleteButton:hover > p {
+  color: #29abe2;
+  transition: outline-color 0.25s ease;
+}
+
+/* Icon Overlays */
+.nameIconEditOverlay {
+  position: absolute;
+  right: 25px;
+  top: 205px;
+  pointer-events: none;
+}
+
+.mailIconEditOverlay {
+  position: absolute;
+  right: 25px;
+  top: 285px;
+  pointer-events: none;
+}
+
+.phoneIconEditOverlay {
+  position: absolute;
+  right: 25px;
+  top: 368px;
+  pointer-events: none;
+}
+
+/* Mobile View */
+.mobileFloatingContactWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f7f8;
+}
+
+.headlineMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px !important;
+  width: 100%;
+}
+
+.headlineMobile * {
+  color: #000000;
+  background-color: transparent;
+}
+
+.headlineMobile > h2 {
+  padding-top: 64px;
+  color: #ffffff;
+  font-size: 46px;
+}
+
+.headlineMobile > p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.headlineText {
+  color: #ffffff;
+}
+
+.goBackArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 6px;
+  border-radius: 50%;
+}
+
+.goBackArrow:hover,
+.goBackArrow:hover * {
+  background-color: lightgray;
+}
+
+/* Mobile Add Contact Overlay Styling */
+
+.editContactMobileWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 396px;
+  border-radius: 24px;
+}
+
+.editContactMobileWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.blueBackgroundEdit {
+  background-color: #2a3647;
+  width: 100%;
+  padding: 24px;
+  border-radius: 18px 18px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 98px;
+  padding-top: 64px;
+}
+
+.profilePictureMobileEdit {
+  position: absolute;
+  height: 140px;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  z-index: 10;
+}
+
+.whiteBackgroundEdit {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 24px;
+  border-radius: 0px 0px 18px 18px;
+  padding-top: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.formButtonsMobile {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  background-color: #ffffff;
+  padding-bottom: 24px;
+}
+
+.formButtonsMobile > button {
+  padding: 18px;
+  border: 1px solid #2a3647;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.closeButtonMobile {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeButtonMobile > svg:hover {
+  cursor: pointer;
+  background-color: #29abe2;
+  border-radius: 50%;
+}
+
+.closeButtonMobile * {
+  fill: #ffffff;
+}
+
+.formInputMobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.formInputMobile > input::placeholder {
+  font-size: 18px;
+}
+
+.formInputMobile > input:focus {
+  outline: none !important;
+  border: 2px solid #29abe2 !important;
+}
+
+.nameIconMobileEdit {
+  position: absolute;
+  top: 425px;
+  right: 32px;
+}
+
+.emailIconMobileEdit {
+  position: absolute;
+  right: 32px;
+}
+
+.phoneIconMobileEdit {
+  position: absolute;
+  top: 555px;
+  right: 32px;
+}
+
+.errorMsgEditContact {
+  background-color: transparent;
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+#errorMsgEditContactNameMobile {
+  font-size: 10px;
+  position: absolute;
+  top: 462px;
+  left: 30px;
+}
+
+#errorMsgEditContactEmailMobile {
+  font-size: 10px;
+  position: absolute;
+  top: 528px;
+  left: 30px;
+}
+
+#errorMsgEditContactPhoneMobile {
+  font-size: 10px;
+  position: absolute;
+  top: 595px;
+  left: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 1400px) {
+  .detailedContactSectionMobile {
+    width: 100%;
+    height: 100%;
+    padding: 64px;
+    margin-left: 64px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    background-color: #f6f7f8;
+    z-index: 1;
+  }
+
+  .formInput {
+    width: 380px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 0px 8px;
+    font-size: 18px;
+  }
+
+  .contactPicture {
+    margin: 0px 0px 0px 32px;
+  }
+
+  .contactForm {
+    margin: 32px;
+    gap: 48px;
+  }
+
+  .nameIconEditOverlay {
+    top: 198px;
+  }
+
+  .mailIconEditOverlay {
+    top: 280px;
+  }
+
+  .phoneIconEditOverlay {
+    top: 362px;
+  }
+
+  .editContactOverlay {
+    width: 950px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* Disable Hover Effects */
+
+  .goBackArrow:hover,
+  .goBackArrow:hover * {
+    background-color: #f6f7f8 !important;
+  }
+
+  .saveContactButton:hover {
+    border: 1px solid #2a3647;
+    transition: none;
+    background-color: #2a3647;
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  .deleteButton {
+    color: #2a3647;
+    font-weight: bold;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .deleteButton:hover {
+    border: 1px solid #2a3647;
+    fill: #2a3647 !important;
+    border-color: #2a3647;
+    color: #2a3647;
+    transition: none;
+    box-shadow: none;
+  }
+
+  .deleteButton:hover > p {
+    color: #2a3647;
+    transition: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .editContactMobileWrapper {
+    width: 300px;
+    border-radius: 18px;
+  }
+
+  .blueBackgroundEdit {
+    width: 100%;
+    padding: 18px;
+    padding-bottom: 64px;
+  }
+
+  .profilePictureMobileEdit {
+    height: 155px;
+  }
+
+  .customProfilePictureBig {
+    width: 80px;
+    height: 80px;
+    font-size: 36px;
+  }
+
+  .customProfilePictureBig .whiteBackgroundEdit {
+    padding: 24px;
+    border-radius: 0px 0px 18px 18px;
+    padding-top: 64px;
+    padding-bottom: 24px;
+  }
+
+  .nameIconMobileEdit {
+    top: 315px;
+  }
+
+  .phoneIconMobileEdit {
+    top: 430px;
+  }
+
+  .emailIconMobileEdit {
+    top: 372px;
+  }
+
+  .formButtonsMobile > button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  #errorMsgEditContactNameMobile {
+    top: 346px;
+    left: 30px;
+  }
+
+  #errorMsgEditContactEmailMobile {
+    top: 404px;
+    left: 30px;
+  }
+
+  #errorMsgEditContactPhoneMobile {
+    top: 464px;
+    left: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .headlineMobile > p {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 46px;
+  }
+}

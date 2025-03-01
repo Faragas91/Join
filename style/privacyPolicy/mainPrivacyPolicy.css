@@ -1,0 +1,133 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.rightSideWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+main {
+  flex-grow: 1;
+  padding: 64px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+main h3 {
+  margin-bottom: 8px;
+}
+
+main p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+main ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+main ul li {
+  margin-bottom: 8px;
+}
+
+:target {
+  scroll-margin-top: 96px;
+}
+
+/* Responsive*/
+@media (max-width: 1400px) {
+  main {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 32px;
+    font-size: 0.95rem;
+    padding-bottom: 90px;
+  }
+
+  main h1 {
+    font-size: 1.75rem;
+  }
+
+  main h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 16px;
+    font-size: 0.9rem;
+    padding-bottom: 80px;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  main h2 {
+    font-size: 1.2rem;
+  }
+
+  main p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 320px) {
+  main {
+    padding: 12px;
+    font-size: 0.85rem;
+    padding-bottom: 80px;
+  }
+
+  main h1 {
+    font-size: 1.3rem;
+  }
+
+  main h2 {
+    font-size: 1.1rem;
+  }
+
+  main p {
+    font-size: 0.85rem;
+  }
+}

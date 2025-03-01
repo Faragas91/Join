@@ -1,0 +1,197 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.rightSideWrapper {
+  width: 100%;
+  background-color: #f6f7f8;
+  height: 100vh;
+}
+
+.main-div {
+  display: flex;
+}
+
+main {
+  padding: 64px;
+  max-width: 1980px;
+}
+
+.summaryHeadline {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.summaryHeadline h2 {
+  font-size: 64px;
+}
+
+.summaryHeadline > p {
+  font-weight: 400;
+  font-size: 26px;
+  order: 3;
+}
+
+.separatorBlue {
+  width: 2px;
+  height: 50px;
+  background-color: #29abe2;
+  order: 2;
+}
+
+.separatorGrey {
+  width: 2px;
+  height: 80px;
+  background-color: rgb(224, 221, 221);
+  margin: 20px;
+}
+
+.summaryMainContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 64px;
+  max-width: 1980px;
+}
+
+/* Content Left */
+.summaryLeftContainer {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.summeryTopContent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.summeryBottomContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.summaryTable {
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.summaryTable:hover {
+  background-color: #2a3647;
+  color: white !important;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+}
+
+.summaryTable:hover *{
+  background-color: #2a3647;
+  color: white !important;
+}
+
+.summaryTable:hover .summaryToDo img {
+  background-color: white !important;
+  content: url("/assets/icon/summary/edit_blue.svg");
+}
+
+.summaryTable:hover .summaryDone img {
+  background-color: white !important;
+  content: url("/assets/icon/summary/done_blue.svg");
+}
+
+.summaryToDo,
+.summaryDone,
+.summaryUrgent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.summaryToDo img,
+.summaryDone img {
+  background-color: #2a3647;
+  border-radius: 50%;
+  padding: 10px;
+  width: 69px;
+  height: 69px;
+}
+
+.summaryUrgent img {
+  width: 60px;
+  height: 60px;
+}
+
+.count {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+}
+
+.count p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.count span {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.count #text {
+  font-size: 16px;
+}
+
+.summaryDeadline {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.summaryDeadline p,
+.summaryDeadline span {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2a3647;
+}
+
+#upcomingDeadline {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a3647;
+}
+
+/* Content Right */
+.summaryRightContainer {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.summaryRightContainer h2 {
+  font-size: 46px;
+  font-weight: 500;
+}
+
+.userName {
+  font-size: 24px;
+  color: #29abe2;
+}

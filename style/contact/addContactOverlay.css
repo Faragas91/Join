@@ -1,0 +1,428 @@
+/* Add Contact Section */
+.addContactOverlay {
+  height: 580px;
+  background-color: #ffffff;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.addContactLeftSide {
+  width: 468px;
+  height: 100%;
+  background-color: #2a3647;
+  border-radius: 32px 0 0 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addContactHeadline {
+  width: 100%;
+  background-color: #2a3647;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Cancel Button */
+.cancelButton {
+  color: #2a3647;
+  font-weight: bold;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cancelButton > p {
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.cancelButton:hover {
+  border: 1px solid #29abe2;
+  fill: #29abe2 !important;
+  color: #29abe2;
+  transition: outline-color 0.25s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.cancelButton:hover > p,
+.cancelButton:hover svg path {
+  color: #29abe2;
+  fill: #29abe2;
+  transition: outline-color 0.25s ease;
+}
+
+/* Create Contact Button */
+.createContactButton {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #2a3647;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.createContactButton > p {
+  font-size: 20px;
+}
+
+.createContactButton:not([disabled]):hover {
+  background-color: #70c5ea;
+  transition: background-color 0.25s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.createContactButton:hover * {
+  background-color: transparent;
+}
+
+/* Contact Form */
+.contactForm {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.formInput:focus {
+  outline-color: #29abe2;
+}
+
+/* Form Input Icons */
+.nameIcon,
+.mailIcon,
+.phoneIcon {
+  position: absolute;
+  right: 30px;
+  pointer-events: none;
+}
+
+.nameIcon {
+  top: 178px;
+}
+
+.mailIcon {
+  top: 260px;
+}
+
+.phoneIcon {
+  top: 343px;
+}
+
+.errorMsgName,
+.errorMsgEmail,
+.errorMsgPhone {
+  background-color: transparent;
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.errorMsgNameMobile,
+.errorMsgEmailMobile,
+.errorMsgPhoneMobile {
+  background-color: transparent;
+  color: red;
+  font-size: 10px;
+  position: absolute;
+}
+
+.errorMsgNameMobile {
+  top: 452px;
+  left: 30px;
+}
+
+.errorMsgEmailMobile {
+  top: 512px;
+  left: 30px;
+}
+
+.errorMsgPhoneMobile {
+  top: 572px;
+  left: 30px;
+}
+
+#createContactBtn:disabled {
+  background-color: lightgrey;
+  cursor: not-allowed;
+}
+
+#createContactBtn:disabled > p {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+.errorMsgContactExist {
+  background-color: transparent;
+  color: red;
+  font-size: 16px;
+  position: absolute;
+  padding-top: 20px;
+  padding-left: 2px;
+}
+
+.errorMsgContactExistMobile {
+  background-color: transparent;
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: 584px;
+}
+
+/* Close Container */
+.closeContainer {
+  display: none;
+  position: absolute;
+  right: 24px;
+  top: -118px;
+  flex-direction: row-reverse;
+}
+
+.closeContainer > a > svg > g > path {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+/* Mobile Add Contact Overlay Styling */
+
+.addContactMobileWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 396px;
+  border-radius: 24px;
+}
+
+.addContactMobileWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.blueBackground {
+  background-color: #2a3647;
+  width: 100%;
+  padding: 24px;
+  border-radius: 18px 18px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 90px;
+}
+
+.profilePictureMobile {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  z-index: 10;
+}
+
+.whiteBackground {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 24px;
+  border-radius: 0px 0px 18px 18px;
+  padding-top: 84px;
+}
+
+.closeButtonMobile {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeButtonMobile > a > svg:hover {
+  cursor: pointer;
+  background-color: #29abe2;
+  border-radius: 50%;
+}
+
+.closeButtonMobile > a * {
+  fill: #ffffff;
+}
+
+.formInputMobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.formInputMobile > input {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid lightgray;
+  padding: 13px 21px;
+}
+
+.formInputMobile > input::placeholder {
+  font-size: 18px;
+}
+
+.formInputMobile > input:focus {
+  outline: none !important;
+  border: 2px solid #29abe2 !important;
+}
+
+.createdContactContainerMobile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.createdContactContainerMobile > button {
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.nameIconMobile {
+  position: absolute;
+  top: 412px;
+  right: 32px;
+}
+
+.emailIconMobile {
+  position: absolute;
+  right: 32px;
+}
+
+.phoneIconMobile {
+  position: absolute;
+  top: 540px;
+  right: 32px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+  
+  /* Disable Hover Effects */
+  .createContactButton:not([disabled]):hover {
+    background-color: #2a3647;
+    transition: none;
+    box-shadow: none;
+    cursor: not-allowed !important;
+  }
+
+  .addContactOverlay {
+   width: 950px;
+}
+}
+
+@media (max-width: 600px) {
+  .addContactMobileWrapper {
+    width: 300px;
+    border-radius: 18px;
+  }
+
+  .blueBackground {
+    width: 100%;
+    padding: 18px;
+    padding-bottom: 64px;
+  }
+
+  .headlineMobile > h2 {
+    padding-top: 48px !important;
+    color: #ffffff;
+    font-size: 36px !important;
+  }
+
+  .profilePictureMobile {
+    height: 120px;
+  }
+
+  .profilePictureMobile > svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .whiteBackground {
+    padding: 24px;
+    border-radius: 0px 0px 18px 18px;
+    padding-top: 64px;
+    padding-bottom: 24px;
+  }
+
+  .formInputMobile {
+    gap: 12px;
+  }
+
+  .formInputMobile > input {
+    height: 42px;
+  }
+
+  .nameIconMobile {
+    top: 353px;
+  }
+
+  .phoneIconMobile {
+    top: 470px;
+  }
+
+  .createContactButton > p {
+    font-size: 16px;
+  }
+
+  .errorMsgNameMobile {
+    top: 392px;
+  }
+
+  .errorMsgEmailMobile {
+    top: 450px;
+  }
+
+  .errorMsgPhoneMobile {
+    top: 508px;
+  }
+
+  .errorMsgContactExistMobile {
+    font-size: 10px;
+    top: 522px;
+  }
+}
+
+@media (max-width: 400px) {
+  .nameIconMobile {
+    top: 330px;
+  }
+
+  .phoneIconMobile {
+    top: 445px;
+  }
+
+  .profilePictureMobile > svg {
+    position: absolute;
+    top: -15px;
+    left: -50px;
+  }
+
+  .errorMsgContactExistMobile {
+    top: 495px;
+  }
+
+  .errorMsgNameMobile {
+    top: 365px;
+  }
+
+  .errorMsgEmailMobile {
+    top: 422px;
+  }
+
+  .errorMsgPhoneMobile {
+    top: 482px;
+  }
+}
