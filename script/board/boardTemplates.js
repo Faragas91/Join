@@ -65,7 +65,7 @@ function templateBoardTasks(task, taskId) {
                       : ""
                   }
               </div>
-              <img src="/assets/icon/board/priority-${
+              <img src="/Join/assets/icon/board/priority-${
                 task.priority
               }.png" alt="Priority Icon">
           </div>
@@ -113,7 +113,7 @@ function templateBoardOverlay(task, taskId) {
             <div class="boardOverlayTaskPriority">
                 <span class="label">Priority:</span>
                 <span>${task.priority}</span>
-                <img src="/assets/icon/board/priority-${
+                <img src="/Join/assets/icon/board/priority-${
                   task.priority
                 }.png" alt="Priority Icon">
             </div>

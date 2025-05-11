@@ -149,5 +149,5 @@ function getSummaryElements() {
  *
  */
 function fromSummaryToBoard() {
-  window.location.href = "/html/board.html?active=board";
+  window.location.href = "/Join/html/board.html?active=board";
 }
