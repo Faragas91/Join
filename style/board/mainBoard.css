@@ -67,7 +67,7 @@
 }
 
 .boardInputContainer button {
-  background-image: url("/assets/icon/board/search_Button.svg");
+  background-image: url("/Join/assets/icon/board/search_Button.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,7 +79,7 @@
 }
 
 .boardInputContainer button:hover {
-  background-image: url("/assets/icon/board/searchclick.png");
+  background-image: url("/Join/assets/icon/board/searchclick.png");
 }
 
 .boardInputContainer .separator {
@@ -147,14 +147,14 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url("/assets/icon/board/plus_button-section-black.svg");
+  background-image: url("/Join/assets/icon/board/plus_button-section-black.svg");
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .boardSection .sectionPlus:hover {
-  background-image: url("/assets/icon/board/plus_button-section-blue.svg");
+  background-image: url("/Join/assets/icon/board/plus_button-section-blue.svg");
 }
 
 /* ==================== Board Tasks ==================== */

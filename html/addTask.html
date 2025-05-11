@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Add Task | Join</title>
-  <link rel="icon" href="../assets/img/joinLogoSmall.png" />
-  <link rel="stylesheet" href="/style/addTask/mainAddTask.css" />
-  <link rel="stylesheet" href="/style/addTask/addTaskResponsive.css" />
-  <link rel="stylesheet" href="/style/addTask/addTaskOverlay.css" />
-  <link rel="stylesheet" href="/style/mainStyle.css" />
-  <link rel="stylesheet" href="/style/fonts.css" />
+  <link rel="icon" href="/Join/assets/img/joinLogoSmall.png" />
+  <link rel="stylesheet" href="/Join/style/addTask/mainAddTask.css" />
+  <link rel="stylesheet" href="/Join/style/addTask/addTaskResponsive.css" />
+  <link rel="stylesheet" href="/Join/style/addTask/addTaskOverlay.css" />
+  <link rel="stylesheet" href="/Join/style/mainStyle.css" />
+  <link rel="stylesheet" href="/Join/style/fonts.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
 </head>
 
@@ -18,36 +18,36 @@
   <!-- Sidebar -->
   <div class="layoutContainer">
     <div class="sidebar__container" id="sidebar-nav">
-      <a class="joinLogoBig"><img class="sidebar__join-image" src="/assets/img/joinIcon.svg" id="logo"
+      <a class="joinLogoBig"><img class="sidebar__join-image" src="/Join/assets/img/joinIcon.svg" id="logo"
           alt="Join logo big" /></a>
 
       <div class="nav__container" id="navbar">
-        <a class="nav-link" href="/html/summary.html?active=summary">
-          <img class="icon" src="/assets/icon/Summary_icon_grey.svg" id="summery" alt="Summary icon" />
+        <a class="nav-link" href="/Join/html/summary.html?active=summary">
+          <img class="icon" src="/Join/assets/icon/Summary_icon_grey.svg" id="summery" alt="Summary icon" />
           <p>Summary</p>
         </a>
-        <a class="nav-link" href="/html/addTask.html?active=add-task">
-          <img class="icon" src="/assets/icon/Add_task_icon_grey.svg" id="add-task" alt="Add task icon" />
+        <a class="nav-link" href="/Join/html/addTask.html?active=add-task">
+          <img class="icon" src="/Join/assets/icon/Add_task_icon_grey.svg" id="add-task" alt="Add task icon" />
           <div class="text">
             <p>Add</p>
             <p>Task</p>
           </div>
         </a>
-        <a class="nav-link" href="/html/board.html?active=board">
-          <img class="icon" src="/assets/icon/Board_icon_grey.svg" id="board" alt="Board Icon" />
+        <a class="nav-link" href="/Join/html/board.html?active=board">
+          <img class="icon" src="/Join/assets/icon/Board_icon_grey.svg" id="board" alt="Board Icon" />
           <p>Board</p>
         </a>
-        <a class="nav-link" href="/html/contact.html?active=contacts">
-          <img class="icon" src="/assets/icon/Contacts_icon_grey.svg" id="contacts" alt="Contact Icon" />
+        <a class="nav-link" href="/Join/html/contact.html?active=contacts">
+          <img class="icon" src="/Join/assets/icon/Contacts_icon_grey.svg" id="contacts" alt="Contact Icon" />
           <p>Contact</p>
         </a>
       </div>
 
       <div class="sidebar__footer">
-        <a class="nav-link" href="/html/privacyPolicy.html?active=privacy_policy">
+        <a class="nav-link" href="/Join/html/privacyPolicy.html?active=privacy_policy">
           <p class="zoom">Privacy Policy</p>
         </a>
-        <a class="nav-link" href="/html/legalNotice.html?active=legal_notice">
+        <a class="nav-link" href="/Join/html/legalNotice.html?active=legal_notice">
           <p class="zoom">Legal Notice</p>
         </a>
       </div>
@@ -76,15 +76,15 @@
 
         <div class="topBarIcons">
           <div onclick="location.href='./help.html'">
-            <img id="questionIcon" class="questionIcon" src="/assets/icon/Help_icon_grey.svg" alt="questionIcon" />
+            <img id="questionIcon" class="questionIcon" src="/Join/assets/icon/Help_icon_grey.svg" alt="questionIcon" />
           </div>
 
           <div onclick="toogleUser()" class="userIcon">
             <div id="userIcon" class="userOptionsFrame">
               <div class="userOptionsContent">
-                <a href="help.html" class="helpLink">Help</a>
-                <a href="legalNotice.html">Legal Notice</a>
-                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="/Join/html/help.html" class="helpLink">Help</a>
+                <a href="/Join/html/legalNotice.html">Legal Notice</a>
+                <a href="/Join/html/privacyPolicy.html">Privacy Policy</a>
                 <a onclick="logout()" style="cursor: pointer">Log Out</a>
               </div>
             </div>
@@ -117,7 +117,7 @@
                   <div onclick="toggleContact()" id="dropdown" class="dropdown">
                     <div class="selectContainer">Select contacts to assign</div>
                     <div class="dropdownIcon">
-                      <img src="/assets/img/arrowDropDown.png" alt="" />
+                      <img src="/Join/assets/img/arrowDropDown.png" alt="" />
                     </div>
                   </div>
                   <div id="selectContact" class="selectContact"></div>
@@ -140,15 +140,15 @@
                   <div class="priorityButton">
                     <button id="urgentButton" type="button" onclick="setPriority('urgent')">
                       Urgent
-                      <img src="/assets/img/prioHigh.png" alt="Urgent" />
+                      <img src="/Join/assets/img/prioHigh.png" alt="Urgent" />
                     </button>
                     <button id="mediumButton" type="button" onclick="setPriority('medium')">
                       Medium
-                      <img src="/assets/img/prioMedium.png" alt="Medium" />
+                      <img src="/Join/assets/img/prioMedium.png" alt="Medium" />
                     </button>
                     <button id="lowButton" type="button" onclick="setPriority('low')">
                       Low
-                      <img src="/assets/img/prioLow.png" alt="Low" />
+                      <img src="/Join/assets/img/prioLow.png" alt="Low" />
                     </button>
                   </div>
                 </div>
@@ -172,15 +172,15 @@
                       oninput="toggleSubtaskIcons()" />
                     <div class="iconWrapper">
                       <div class="addSubtask">
-                        <img src="/assets/img/subtaskPlusIcon.png" id="subtaskPlusIcon" alt="Add subtask"
+                        <img src="/Join/assets/img/subtaskPlusIcon.png" id="subtaskPlusIcon" alt="Add subtask"
                           onclick="subtaskEmpty()" />
                       </div>
 
                       <div id="subtaskIcons" style="display: none">
-                        <img src="/assets/icon/addTask/discard.png" id="discardSubtask" class="subtaskIcon"
+                        <img src="/Join/assets/icon/addTask/discard.png" id="discardSubtask" class="subtaskIcon"
                           onclick="clearSubtaskInput()" alt="Discard subtask" />
-                        <img src="/assets/icon/addTask/vector.png" id="vectorIcon" alt="Vector separator" />
-                        <img src="/assets/icon/addTask/done.png" id="confirmSubtask" class="subtaskIcon"
+                        <img src="/Join/assets/icon/addTask/vector.png" id="vectorIcon" alt="Vector separator" />
+                        <img src="/Join/assets/icon/addTask/done.png" id="confirmSubtask" class="subtaskIcon"
                           onclick="addSubtask()" alt="Confirm subtask" />
                       </div>
                     </div>
@@ -205,23 +205,23 @@
           </button>
           <button id="createTaskButton" type="button" class="createButton" onclick="createTasksForBoard()">
             Create Task
-            <img src="/assets/img/check.png" alt="Create icon" />
+            <img src="/Join/assets/img/check.png" alt="Create icon" />
           </button>
         </div>
       </div>
       </form>
       </main>
     </div>
-    <script src="/script/mainScript.js"></script>
+    <script src="/Join/script/mainScript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="/script/addTask/mainAddTask.js"></script>
-    <script src="/script/addTask/addTaskTemplates.js"></script>
-    <script src="/script/addTask/addTaskOverlays.js"></script>
-    <script src="/script/addTask/subtasks.js"></script>
-    <script src="/script/addTask/prioButtons.js"></script>
-    <script src="/script/board/mainBoard.js"></script>
-    <script src="/script/board/handleTaskLogic.js"></script>
-    <script src="/script/board/boardTemplates.js"></script>
+    <script src="/Join/script/addTask/mainAddTask.js"></script>
+    <script src="/Join/script/addTask/addTaskTemplates.js"></script>
+    <script src="/Join/script/addTask/addTaskOverlays.js"></script>
+    <script src="/Join/script/addTask/subtasks.js"></script>
+    <script src="/Join/script/addTask/prioButtons.js"></script>
+    <script src="/Join/script/board/mainBoard.js"></script>
+    <script src="/Join/script/board/handleTaskLogic.js"></script>
+    <script src="/Join/script/board/boardTemplates.js"></script>
 </body>
 
 </html>

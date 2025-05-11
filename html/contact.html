@@ -4,48 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts | Join</title>
-    <link rel="icon" href="/assets/img/joinLogoSmall.png" />
+    <link rel="icon" href="/Join/assets/img/joinLogoSmall.png" />
     <!-- CSS -->
-    <link rel="stylesheet" href="/style/mainStyle.css" />
-    <link rel="stylesheet" href="/style/fonts.css" />
-    <link rel="stylesheet" href="/style/contact/addContactOverlay.css" />
-    <link rel="stylesheet" href="/style/contact/contactList.css" />
-    <link rel="stylesheet" href="/style/contact/editContactOverlay.css" />
-    <link rel="stylesheet" href="/style/contact/mainIndex.css" />
+    <link rel="stylesheet" href="/Join/style/mainStyle.css" />
+    <link rel="stylesheet" href="/Join/style/fonts.css" />
+    <link rel="stylesheet" href="/Join/style/contact/addContactOverlay.css" />
+    <link rel="stylesheet" href="/Join/style/contact/contactList.css" />
+    <link rel="stylesheet" href="/Join/style/contact/editContactOverlay.css" />
+    <link rel="stylesheet" href="/Join/style/contact/mainIndex.css" />
   </head>
 
   <body onload="init()">
     <!-- Sidebar -->
     <div class="sidebar__container" id="sidebar-nav">
-      <a class="joinLogoBig"><img class="sidebar__join-image" src="/assets/img/joinIcon.svg" id="logo" alt="Join logo big" /></a>
+      <a class="joinLogoBig"><img class="sidebar__join-image" src="/Join/assets/img/joinIcon.svg" id="logo" alt="Join logo big" /></a>
 
       <div class="nav__container" id="navbar">
-        <a class="nav-link" href="/html/summary.html?active=summary">
-          <img class="icon" src="/assets/icon/Summary_icon_grey.svg" id="summery" alt="Summary icon" />
+        <a class="nav-link" href="/Join/html/summary.html?active=summary">
+          <img class="icon" src="/Join/assets/icon/Summary_icon_grey.svg" id="summery" alt="Summary icon" />
           <p>Summary</p>
         </a>
-        <a class="nav-link" href="/html/addTask.html?active=add-task">
-          <img class="icon" src="/assets/icon/Add_task_icon_grey.svg" id="add-task" alt="Add task icon" />
+        <a class="nav-link" href="/Join/html/addTask.html?active=add-task">
+          <img class="icon" src="/Join/assets/icon/Add_task_icon_grey.svg" id="add-task" alt="Add task icon" />
           <div class="text">
             <p>Add</p>
             <p>Task</p>
           </div>
         </a>
-        <a class="nav-link" href="/html/board.html?active=board">
-          <img class="icon" src="/assets/icon/Board_icon_grey.svg" id="board" alt="Board Icon" />
+        <a class="nav-link" href="/Join/html/board.html?active=board">
+          <img class="icon" src="/Join/assets/icon/Board_icon_grey.svg" id="board" alt="Board Icon" />
           <p>Board</p>
         </a>
-        <a class="nav-link" href="/html/contact.html?active=contacts">
-          <img class="icon" src="/assets/icon/Contacts_icon_grey.svg" id="contacts" alt="Contact Icon" />
+        <a class="nav-link" href="/Join/html/contact.html?active=contacts">
+          <img class="icon" src="/Join/assets/icon/Contacts_icon_grey.svg" id="contacts" alt="Contact Icon" />
           <p>Contact</p>
         </a>
       </div>
 
       <div class="sidebar__footer">
-        <a class="nav-link" href="/html/privacyPolicy.html?active=privacy_policy">
+        <a class="nav-link" href="/Join/html/privacyPolicy.html?active=privacy_policy">
           <p class="zoom">Privacy Policy</p>
         </a>
-        <a class="nav-link" href="/html/legalNotice.html?active=legal_notice">
+        <a class="nav-link" href="/Join/html/legalNotice.html?active=legal_notice">
           <p class="zoom">Legal Notice</p>
         </a>
       </div>
@@ -78,15 +78,15 @@
 
         <div class="topBarIcons">
           <div onclick="location.href='./help.html'">
-            <img id="questionIcon" class="questionIcon" src="/assets/icon/Help_icon_grey.svg" alt="questionIcon" />
+            <img id="questionIcon" class="questionIcon" src="/Join/assets/icon/Help_icon_grey.svg" alt="questionIcon" />
           </div>
 
           <div onclick="toogleUser()" class="userIcon">
             <div id="userIcon" class="userOptionsFrame">
               <div class="userOptionsContent">
-                <a href="help.html" class="helpLink">Help</a>
-                <a href="legalNotice.html">Legal Notice</a>
-                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="/Join/html/help.html" class="helpLink">Help</a>
+                <a href="/Join/html/legalNotice.html">Legal Notice</a>
+                <a href="/Join/html/privacyPolicy.html">Privacy Policy</a>
                 <a onclick="logout()" style="cursor: pointer">Log Out</a>
               </div>
             </div>
@@ -136,13 +136,13 @@
       </main>
     </div>
     <!-- JavaScript -->
-    <script src="/script/mainScript.js"></script>
-    <script src="/script/contact/mainContacts.js"></script>
-    <script src="/script/contact/contactListLogic.js"></script>
-    <script src="/script/contact/addContactLogic.js"></script>
-    <script src="/script/contact/editAndDeleteContactLogic.js"></script>
-    <script src="/script/contact/contactTemplates.js"></script>
-    <script src="/script/contact/formValidationAddContact.js"></script>
-    <script src="/script/contact/formValidationEditContacts.js"></script>
+    <script src="/Join/script/mainScript.js"></script>
+    <script src="/Join/script/contact/mainContacts.js"></script>
+    <script src="/Join/script/contact/contactListLogic.js"></script>
+    <script src="/Join/script/contact/addContactLogic.js"></script>
+    <script src="/Join/script/contact/editAndDeleteContactLogic.js"></script>
+    <script src="/Join/script/contact/contactTemplates.js"></script>
+    <script src="/Join/script/contact/formValidationAddContact.js"></script>
+    <script src="/Join/script/contact/formValidationEditContacts.js"></script>
   </body>
 </html>

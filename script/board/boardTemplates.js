@@ -254,15 +254,15 @@ function templateEditTask(task, taskId) {
           <div class="editPriorityButtonOverlay">
             <button class="editButtonWidth" id="urgentButton" type="button" onclick="setPriority('urgent')">
               Urgent
-              <img class="editPriorityImages" src="/assets/icon/board/priority-Urgent.png" alt="Urgent" />
+              <img class="editPriorityImages" src="/Join/assets/icon/board/priority-Urgent.png" alt="Urgent" />
             </button>
             <button class="editButtonWidth" id="mediumButton" type="button" onclick="setPriority('medium')">
               Medium
-              <img class="editPriorityImages" src="/assets/icon/board/priority-Medium.png" alt="Medium" />
+              <img class="editPriorityImages" src="/Join/assets/icon/board/priority-Medium.png" alt="Medium" />
             </button>
             <button class="editButtonWidth" id="lowButton" type="button" onclick="setPriority('low')">
               Low
-              <img class="editPriorityImages" src="/assets/icon/board/priority-Low.png" alt="Low" />
+              <img class="editPriorityImages" src="/Join/assets/icon/board/priority-Low.png" alt="Low" />
             </button>
           </div>
         </div>
@@ -272,7 +272,7 @@ function templateEditTask(task, taskId) {
           <div onclick="toggleContact()" id="dropdown" class="editDropdown">
             <div class="editSelectContainerOverlay">Select contacts to assign</div>
             <div class="editDropdownIcon">
-              <img id="dropdownIconDown" src="/assets/img/arrowDropDown.png" alt="" />
+              <img id="dropdownIconDown" src="/Join/assets/img/arrowDropDown.png" alt="" />
             </div>
           </div>
           <div id="selectContact" class="editSelectContact"></div>
@@ -311,13 +311,13 @@ function templateEditTask(task, taskId) {
           <input type="text" placeholder="Add new subtask" class="editTaskInput" id="addTaskSubTasks" oninput="toggleSubtaskIcons()" />
           <div class="editIconWrapperOverlay">
             <div class="editSubtask">
-              <img id="subtaskPlusIcon" src="/assets/img/subtaskPlusIcon.png" onclick="subtaskEmpty()"/>
+              <img id="subtaskPlusIcon" src="/Join/assets/img/subtaskPlusIcon.png" onclick="subtaskEmpty()"/>
             </div>
 
             <div id="subtaskIcons" style="display: none">
-              <img src="/assets/icon/addTask/discard.png" id="discardSubtask" class="editSubtaskIcon" onclick="clearSubtaskInput()" alt="Discard subtask" />
-              <img src="/assets/icon/addTask/vector.png" id="vectorIcon" alt="Vector separator" />
-              <img src="/assets/icon/addTask/done.png" id="confirmSubtask" class="editSubtaskIcon" onclick="addSubtask()" alt="Confirm subtask" />
+              <img src="/Join/assets/icon/addTask/discard.png" id="discardSubtask" class="editSubtaskIcon" onclick="clearSubtaskInput()" alt="Discard subtask" />
+              <img src="/Join/assets/icon/addTask/vector.png" id="vectorIcon" alt="Vector separator" />
+              <img src="/Join/assets/icon/addTask/done.png" id="confirmSubtask" class="editSubtaskIcon" onclick="addSubtask()" alt="Confirm subtask" />
             </div>
           </div>
         </div>
@@ -330,9 +330,9 @@ function templateEditTask(task, taskId) {
                   <li class="subtaskText">${subtask.text}</li>
                 </div>
                 <div class="editSubtaskIcons editSubtaskItem">
-                   <img src="/assets/icon/addTask/edit.png" class="editSubtaskIcon" onclick="editOldSubtask(${index})" />
-                  <img src="/assets/icon/addTask/vector.png">
-                 <img src="/assets/icon/addTask/delete.png" class="editSubtaskIcon removeSubtask" onclick="removeOldSubtask(${index})" />
+                   <img src="/Join/assets/icon/addTask/edit.png" class="editSubtaskIcon" onclick="editOldSubtask(${index})" />
+                  <img src="/Join/assets/icon/addTask/vector.png">
+                 <img src="/Join/assets/icon/addTask/delete.png" class="editSubtaskIcon removeSubtask" onclick="removeOldSubtask(${index})" />
 
                 </div>
               </div>
@@ -349,7 +349,7 @@ function templateEditTask(task, taskId) {
 <div class="okayBtnContainer">
   <button type="button" class="okayBtn" onclick="editTasksForBoard('${taskId}')">
     <p>Ok</p>
-    <img src="/assets/img/check.png" alt="" />
+    <img src="/Join/assets/img/check.png" alt="" />
   </button>
 </div>
     `;

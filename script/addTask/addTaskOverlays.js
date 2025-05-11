@@ -90,6 +90,6 @@ function hideOverlay(content) {
     const overlay = document.getElementById("addTaskOverlay");
     overlay.classList.add("hidden");
     content.style.animation = "";
-    window.location.href = "/html/board.html?active=board";
+    window.location.href = "/Join/html/board.html?active=board";
   }, 300);
 }

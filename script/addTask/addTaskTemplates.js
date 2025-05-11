@@ -27,7 +27,7 @@ function addTaskHtmlTemplate() {
         <div onclick="toggleContact()" id="dropdown" class="dropdown dropdownOverlay">
           <div class="selectContainer selectContainerOverlay">Select contacts to assign</div>
           <div class="dropdownIcon">
-            <img id="dropdownIconDown" src="/assets/img/arrowDropDown.png" alt="" />
+            <img id="dropdownIconDown" src="/Join/assets/img/arrowDropDown.png" alt="" />
           </div>
         </div>
         <div id="selectContact" class="selectContact selectContactOverlay"></div>
@@ -47,15 +47,15 @@ function addTaskHtmlTemplate() {
         <div class="priorityButtonOverlay">
           <button id="urgentButton" type="button" onclick="setPriority('urgent')">
             Urgent
-            <img src="/assets/img/prioHigh.png" alt="Urgent" />
+            <img src="/Join/assets/img/prioHigh.png" alt="Urgent" />
           </button>
           <button id="mediumButton" type="button" onclick="setPriority('medium')">
             Medium
-            <img src="/assets/img/prioMedium.png" alt="Medium" />
+            <img src="/Join/assets/img/prioMedium.png" alt="Medium" />
           </button>
           <button id="lowButton" type="button" onclick="setPriority('low')">
             Low
-            <img src="/assets/img/prioLow.png" alt="Low" />
+            <img src="/Join/assets/img/prioLow.png" alt="Low" />
           </button>
         </div>
       </div>
@@ -76,13 +76,13 @@ function addTaskHtmlTemplate() {
           <input type="text" placeholder="Add new subtask" class="addTaskInput addTaskInputOverlay" id="addTaskSubTasks" oninput="toggleSubtaskIcons()" />
           <div class="iconWrapper iconWrapperOverlay">
             <div class="addSubtask">
-              <img src="/assets/img/subtaskPlusIcon.png" id="subtaskPlusIcon" alt="Add subtask" onclick="subtaskEmpty()" />
+              <img src="/Join/assets/img/subtaskPlusIcon.png" id="subtaskPlusIcon" alt="Add subtask" onclick="subtaskEmpty()" />
             </div>
 
             <div id="subtaskIcons" style="display: none">
-              <img src="/assets/icon/addTask/discard.png" id="discardSubtask" class="subtaskIcon" onclick="clearSubtaskInput()" alt="Discard subtask" />
-              <img src="/assets/icon/addTask/vector.png" id="vectorIcon" alt="Vector separator" />
-              <img src="/assets/icon/addTask/done.png" id="confirmSubtask" class="subtaskIcon" onclick="addSubtask()" alt="Confirm subtask" />
+              <img src="/Join/assets/icon/addTask/discard.png" id="discardSubtask" class="subtaskIcon" onclick="clearSubtaskInput()" alt="Discard subtask" />
+              <img src="/Join/assets/icon/addTask/vector.png" id="vectorIcon" alt="Vector separator" />
+              <img src="/Join/assets/icon/addTask/done.png" id="confirmSubtask" class="subtaskIcon" onclick="addSubtask()" alt="Confirm subtask" />
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@ function addTaskHtmlTemplate() {
       </button>
       <button id="createTaskButton" type="button" class="createButton createButtonOverlay" onclick="createTasksForBoard()">
         Create Task
-        <img src="/assets/img/check.png" alt="" />
+        <img src="/Join/assets/img/check.png" alt="" />
       </button>
     </div>
   </div>
@@ -146,9 +146,9 @@ function getSubtasks(subtaskValue) {
           <li class="subtaskText">${subtaskValue}</li>
         </div>
         <div class="subtaskIcons">
-          <img src="/assets/icon/addTask/edit.png" class="subtaskIcon editSubtask">
-          <img src="/assets/icon/addTask/vector.png">
-          <img src="/assets/icon/addTask/delete.png" class="subtaskIcon removeSubtask">
+          <img src="/Join/assets/icon/addTask/edit.png" class="subtaskIcon editSubtask">
+          <img src="/Join/assets/icon/addTask/vector.png">
+          <img src="/Join/assets/icon/addTask/delete.png" class="subtaskIcon removeSubtask">
         </div>
     </div>
     `;

@@ -165,7 +165,7 @@ form#taskForm h1 {
 
 select {
   padding: 10px;
-  background: url(/assets/icon/addTask/arrow_drop_downaa.svg) no-repeat right
+  background: url("/Join/assets/icon/addTask/arrow_drop_downaa.svg") no-repeat right
     10px center;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -610,7 +610,7 @@ button img {
 /* Calender */
 
 .dateInput {
-  background: url("/assets/icon/addTask/calender.png") no-repeat right 10px
+  background: url("/Join/assets/icon/addTask/calender.png") no-repeat right 10px
     center;
   background-color: #fff;
   background-size: 20px;

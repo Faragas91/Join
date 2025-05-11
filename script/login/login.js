@@ -1,5 +1,5 @@
 const databaseURL =
-  "https://joinbackend-9bd67-default-rtdb.europe-west1.firebasedatabase.app";
+  "https://join-a0424-default-rtdb.europe-west1.firebasedatabase.app";
 
 const emailInput = document.querySelector(".inputEmail");
 const passwordInput = document.querySelector(".inputPassword");
@@ -47,7 +47,7 @@ function checkUserSession() {
   const guest = localStorage.getItem("guestMode");
 
   if (user || guest) {
-    window.location.href = "./summary.html?active=summary&user=loggedIn";
+    window.location.href = "/Join/html/summary.html?active=summary&user=loggedIn";
   }
 }
 
@@ -106,11 +106,11 @@ function updatePasswordIcon() {
 
   if (this.value.length > 0) {
     this.style.backgroundImage = inputType === "text"
-        ? "url(../../assets/icon/login/visibility.svg)"
-        : "url(../../assets/icon/login/visibility_off.svg)";
+        ? "url(/Join/assets/icon/login/visibility.svg)"
+        : "url(/Join/assets/icon/login/visibility_off.svg)";
     this.nextElementSibling.classList.remove("dNone");
   } else {
-    this.style.backgroundImage = "url(../../assets/icon/login/lock.svg)";
+    this.style.backgroundImage = "url(/Join/assets/icon/login/lock.svg)";
     this.nextElementSibling.classList.add("dNone");
   }
 }
@@ -125,10 +125,10 @@ function toggleVisibility() {
 
   if (input.type === "password") {
     input.type = "text";
-    input.style.backgroundImage = "url(../../assets/icon/login/visibility.svg)";
+    input.style.backgroundImage = "url(/Join/assets/icon/login/visibility.svg)";
   } else {
     input.type = "password";
-    input.style.backgroundImage = "url(../../assets/icon/login/visibility_off.svg)";
+    input.style.backgroundImage = "url(/Join/assets/icon/login/visibility_off.svg)";
   }
 }
 
@@ -139,7 +139,7 @@ function toggleVisibility() {
  */
 function guestLogIn() {
   localStorage.setItem("guestMode", "true");
-  window.location.href = "./summary.html?active=summary&user=guest";
+  window.location.href = "/Join/html/summary.html?active=summary&user=guest";
 }
 
 /**
@@ -191,7 +191,7 @@ function handleSuccessfulLogin(users, user) {
     "userId",
     Object.keys(users).find((id) => users[id] === user)
   );
-  window.location.href = "./summary.html?active=summary&user=loggedIn";
+  window.location.href = "/Join/html/summary.html?active=summary&user=loggedIn";
   passwordInput.style.border = "";
   document.getElementById("errorMsgCredentials").innerHTML = "";
 }

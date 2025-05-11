@@ -386,14 +386,14 @@
   display: block;
   width: 24px;
   height: 24px;
-  background: url("../../assets/icon/login/unchecked.svg");
+  background: url("/Join/assets/icon/login/unchecked.svg");
   background-size: cover;
   cursor: pointer;
   transition-duration: 0.2s;
 }
 
 .editCheckboxList label:hover {
-  background-image: url("../../assets/icon/login/hover_unchecked.svg");
+  background-image: url("/Join/assets/icon/login/hover_unchecked.svg");
 }
 
 .editCheckboxList input[type="editCheckboxList"] {
@@ -401,11 +401,11 @@
 }
 
 .editCheckboxList input[type="editCheckboxList"]:checked + label {
-  background-image: url("../../assets/icon/login/checked.svg");
+  background-image: url("/Join/assets/icon/login/checked.svg");
 }
 
 .editCheckboxList input[type="editCheckboxList"]:checked + label:hover {
-  background-image: url("../../assets/icon/login/hover_checked.svg");
+  background-image: url("/Join/assets/icon/login/hover_checked.svg");
 }
 
 .editButtonWidth {

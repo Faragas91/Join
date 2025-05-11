@@ -104,12 +104,12 @@ main {
 
 .summaryTable:hover .summaryToDo img {
   background-color: white !important;
-  content: url("/assets/icon/summary/edit_blue.svg");
+  content: url("/Join/assets/icon/summary/edit_blue.svg");
 }
 
 .summaryTable:hover .summaryDone img {
   background-color: white !important;
-  content: url("/assets/icon/summary/done_blue.svg");
+  content: url("/Join/assets/icon/summary/done_blue.svg");
 }
 
 .summaryToDo,

@@ -131,7 +131,7 @@ function isContactAlreadySelected(name, email) {
  * @returns {Promise<Object>} The contacts data.
  */
 async function fetchContacts() {
-  const response = await fetch("https://joinbackend-9bd67-default-rtdb.europe-west1.firebasedatabase.app/Data/Contacts.json");
+  const response = await fetch("https://join-a0424-default-rtdb.europe-west1.firebasedatabase.app/Data/Contacts.json");
   return response.json();
 }
 

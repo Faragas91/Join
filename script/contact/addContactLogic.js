@@ -126,7 +126,7 @@ function getNextId() {
  * @returns {Promise<Object>} A promise resolving to the contacts data.
  */
 function fetchContacts() {
-  const url = "https://joinbackend-9bd67-default-rtdb.europe-west1.firebasedatabase.app/Data/Contacts.json";
+  const url = "https://join-a0424-default-rtdb.europe-west1.firebasedatabase.app/Data/Contacts.json";
   return fetch(url).then((response) => response.json());
 }
 

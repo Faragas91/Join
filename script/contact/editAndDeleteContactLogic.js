@@ -158,7 +158,7 @@ async function deleteContactData(contactId) {
  * @param {string} contactId - The ID of the contact to remove.
  */
 async function deleteContactInDatabase(contactId) {
-  const url = `https://joinbackend-9bd67-default-rtdb.europe-west1.firebasedatabase.app/Data/Contacts/${contactId}.json`;
+  const url = `https://join-a0424-default-rtdb.europe-west1.firebasedatabase.app/Data/Contacts/${contactId}.json`;
 
   const response = await fetch(url, {
     method: "DELETE",

@@ -140,11 +140,11 @@
   }
 
   .boardSection .sectionPlus:hover {
-    background-image: url("/assets/icon/board/plus_button-section-black.svg");
+    background-image: url("/Join/assets/icon/board/plus_button-section-black.svg");
   }
 
   .boardInputContainer button:hover {
-    background-image: url("/assets/icon/board/search_Button.svg");
+    background-image: url("/Join/assets/icon/board/search_Button.svg");
   }
 
   .closeBoardOverlay:hover {

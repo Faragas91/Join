@@ -32,13 +32,13 @@
 
   .summaryTable:hover .summaryToDo img {
     background-color: #2a3647 !important;
-    content: url("/assets/icon/summary/edit_white.svg") !important;
+    content: url("/Join/assets/icon/summary/edit_white.svg") !important;
     transition: none !important;
   }
 
   .summaryTable:hover .summaryDone img {
     background-color: #2a3647 !important;
-    content: url("/assets/icon/summary/done_white.svg") !important;
+    content: url("/Join/assets/icon/summary/done_white.svg") !important;
     transition: none !important;
   }
 

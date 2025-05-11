@@ -173,7 +173,7 @@ async function createTasksForBoard() {
   await pushTaskToBackendData(newTask);
   await syncBackendDataWithFirebase();
   loadTasksToBoard();
-  window.location.href = "/html/board.html?active=board";
+  window.location.href = "/Join/html/board.html?active=board";
 }
 
 /**
@@ -292,7 +292,7 @@ async function editTask(taskId) {
  */
 async function syncBackendDataWithFirebase() {
   await fetch(
-    "https://joinbackend-9bd67-default-rtdb.europe-west1.firebasedatabase.app/.json",
+    "https://join-a0424-default-rtdb.europe-west1.firebasedatabase.app/.json",
     {
       method: "PUT",
       headers: {
