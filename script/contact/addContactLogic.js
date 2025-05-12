@@ -179,7 +179,7 @@ function findSmallestAvailableId(contacts) {
  * @returns {Promise<void>} A promise that resolves once the contact is saved.
  */
 function saveContact(contactId, email, name, phone) {
-  const url = `https://joinbackend-9bd67-default-rtdb.europe-west1.firebasedatabase.app/Data/Contacts/contactId${contactId}.json`;
+  const url = `https://join-a0424-default-rtdb.europe-west1.firebasedatabase.app/Data/Contacts/contactId${contactId}.json`;
 
   const contactData = { email, name, phone };
 

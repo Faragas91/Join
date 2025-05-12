@@ -113,7 +113,7 @@ async function updateContactInDatabase(contactId, updatedData) {
  * @returns {string} The URL for the PATCH request.
  */
 function buildContactUrl(contactId) {
-  return `https://joinbackend-9bd67-default-rtdb.europe-west1.firebasedatabase.app/Data/Contacts/${contactId}.json`;
+  return `https://join-a0424-default-rtdb.europe-west1.firebasedatabase.app/Data/Contacts/${contactId}.json`;
 }
 
 /**
