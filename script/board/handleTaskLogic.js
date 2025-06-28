@@ -304,11 +304,33 @@ async function syncBackendDataWithFirebase() {
  */
 async function pushTaskToBackendData(task) {
   await fetchDataJSON();
+
   if (!backendData.Data.Tasks) backendData.Data.Tasks = {};
   const tasks = backendData.Data.Tasks;
-  let newTaskId = `taskId${Object.keys(tasks).length + 1}`;
+
+  const newTaskId = generateFreeTaskId();
   tasks[newTaskId] = task;
 }
+
+/**
+ * Finds the next free task ID in the format "taskIdX"
+ * @returns {string} The next available task ID
+ */
+function generateFreeTaskId() {
+  let newIdNumber = 0;
+  let newTaskId;
+
+  while (true) {
+    newTaskId = `taskId${newIdNumber}`;
+    if (!backendData.Data.Tasks[newTaskId]) {
+      break;
+    }
+    newIdNumber++;
+  }
+
+  return newTaskId;
+}
+
 
 /**
  * Displays task creation message.
