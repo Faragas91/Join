@@ -26,20 +26,15 @@ function getSelectedContacts() {
 }
 
 /**
- * Retrieves checked contacts.
+ * Gets "boardSection" from LocalStorage.
  *
  */
-function getCheckedSelectedContacts() {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get("boardSection");
-}
-
-/**
- * Gets "boardSection" from URL.
- *
- */
-function getBoardSectionFromURL() {
-  return new URLSearchParams(window.location.search).get("boardSection");
+function getBoardSectionFromLocalStorage() {
+  selectedBoardSection = localStorage.getItem("boardSection");
+  if (selectedBoardSection === "undefined") {
+    selectedBoardSection = "To do"; // Default section if none is set
+  }
+  return selectedBoardSection;
 }
 
 /**
@@ -156,8 +151,7 @@ function formatPriority(priority) {
  */
 async function createTasksForBoard() {
   const elements = getAddTaskElements();
-  const selectedBoardSection =
-    window.innerWidth <= 1000 ? getBoardSectionFromURL() : null;
+  const selectedBoardSection = getBoardSectionFromLocalStorage();
 
   if (
     !validateTaskInputs(
@@ -174,6 +168,7 @@ async function createTasksForBoard() {
   await syncBackendDataWithFirebase();
   loadTasksToBoard();
   window.location.href = "/Join/html/board.html?active=board";
+  localStorage.removeItem("boardSection");
 }
 
 /**
@@ -311,7 +306,7 @@ async function pushTaskToBackendData(task) {
   await fetchDataJSON();
   if (!backendData.Data.Tasks) backendData.Data.Tasks = {};
   const tasks = backendData.Data.Tasks;
-  let newTaskId = `taskId${Object.keys(tasks).length}`;
+  let newTaskId = `taskId${Object.keys(tasks).length + 1}`;
   tasks[newTaskId] = task;
 }
 

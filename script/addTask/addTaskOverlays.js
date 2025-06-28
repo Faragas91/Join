@@ -33,7 +33,7 @@ function isSmallScreen() {
  * @param {string} boardSection - The board section where the new task will be added.
  */
 function redirectToAddTaskPage(boardSection) {
-  window.location.href = `http://127.0.0.1:5500/html/addTask.html?active=addTask&boardSection=${encodeURIComponent(
+  window.location.href = `/Join/html/addTask.html?active=addTask&boardSection=${encodeURIComponent(
     boardSection
   )}`;
 }
@@ -50,6 +50,7 @@ function showOverlay(boardSection) {
   dynamicContent.innerHTML = addTaskHtmlTemplate();
   overlay.classList.remove("hidden");
   selectedBoardSection = boardSection;
+  localStorage.setItem("boardSection", boardSection);
 
   animateOverlay();
 }
