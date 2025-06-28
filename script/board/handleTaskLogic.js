@@ -32,7 +32,7 @@ function getSelectedContacts() {
 function getBoardSectionFromLocalStorage() {
   selectedBoardSection = localStorage.getItem("boardSection");
   if (selectedBoardSection === "undefined") {
-    selectedBoardSection = "To do"; // Default section if none is set
+    selectedBoardSection = "To do";
   }
   return selectedBoardSection;
 }
