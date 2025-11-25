@@ -123,3 +123,20 @@ function checkUserSession() {
     overrideMediaQuery();
   }
 }
+
+/**
+ * Overrides the default media query styles by injecting a custom CSS style tag.
+ *
+ */
+function overrideMediaQuery() {
+  const styleId = "override-sidebar-footer";
+  let styleTag = document.getElementById(styleId);
+
+  if (!styleTag) {
+    styleTag = document.createElement("style");
+    styleTag.id = styleId;
+    document.head.appendChild(styleTag);
+  }
+
+  styleTag.textContent = styleContent();
+}
